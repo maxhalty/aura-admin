@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "auradmin",
+    "site": "koopa-admin",
     "public": "dist",
     "ignore": [
       "firebase.json",
