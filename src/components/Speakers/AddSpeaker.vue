@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-dialog v-model="dialog" persistent scrollable width="1200">
       <template v-slot:activator="{ on }">
-        <v-btn color="indigo hidden-sm-and-down" depressed dark v-on="on">Add New Speaker</v-btn>
+        <v-btn color="indigo hidden-sm-and-down" depressed dark v-on="on">Add New Card</v-btn>
         <v-btn fab x-small color="indigo" outlined class="hidden-md-and-up" dark v-on="on">
           <v-icon dark>mdi-plus</v-icon>
         </v-btn>
@@ -13,7 +13,7 @@
           style="border-bottom:1px solid #e0e0e0;"
           primary-title
           dark
-        >Add New Speaker</v-card-title>
+        >Add New Card</v-card-title>
         <v-card-text>
           <v-container fluid>
             <v-row class="pa-0">
@@ -28,7 +28,7 @@
                       >ID should be unique, Once you assigned an ID to event, it can't be changed</p>
                     </v-col>
                     <v-col md="12" cols="12" class="pa-1 ma-0">
-                      <p style="font-size:120%" class="my-0 mb-2">Speaker Status</p>
+                      <p style="font-size:120%" class="my-0 mb-2">Card Status</p>
                     </v-col>
 
                     <v-col md="3" xs="3" cols="12" class="pa-1 py-0 ma-0">
@@ -44,7 +44,7 @@
                   <!-- Speaker Info -->
                   <v-row class="pa-3 py-0 my-0">
                     <v-col md="12" cols="12" class="pa-1 ma-0">
-                      <p style="font-size:120%" class="my-0">Speaker Info</p>
+                      <p style="font-size:120%" class="my-0">Card Info</p>
                     </v-col>
 
                     <v-col md="4" xs="4" cols="12" class="pa-1 py-0 ma-0">
@@ -186,7 +186,7 @@
             :disabled="!valid"
             :loading="loading"
             @click="SaveSpeaker"
-          >Add New Speaker</v-btn>
+          >Add New Card</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

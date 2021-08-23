@@ -99,7 +99,7 @@
                 :items="partnersData"
                 v-if="dataView == 0"
                 :loading="isLoading"
-                loading-text="Loading Speakers from Dir"
+                loading-text="Loading Cards from Dir"
                 :search="search"
                 disable-pagination
                 hide-default-footer

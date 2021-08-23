@@ -104,12 +104,12 @@ const routes = [{
     }
   },
   {
-    path: '/speakers',
-    name: "Speakers",
+    path: '/cards',
+    name: "Cards",
     component: () => import( /* webpackChunkName: "speakers" */ '@/views/Speakers'),
     meta: {
       requiresAuth: true,
-      title: "Speakers",
+      title: "Cards",
       bottomVisible:true,
       access: {
         "Super Admin": true,
@@ -119,12 +119,12 @@ const routes = [{
     }
   },
   {
-    path: '/speakers/:id',
-    name: "Speaker-Details",
+    path: '/cards/:id',
+    name: "Card-Details",
     component: () => import( /* webpackChunkName: "speakers-details" */ '@/views/Speakers/ViewSpeaker'),
     meta: {
       requiresAuth: true,
-      title: "Speakers Details",
+      title: "Cards Details",
       bottomVisible:true,
       access: {
         "Super Admin": true,

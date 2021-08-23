@@ -84,7 +84,7 @@
                 <v-icon class="my-auto" color="primary" style="font-size:400%">mdi-account-multiple</v-icon>
               </v-col>
               <v-col md="6" lg="8" class="pa-5">
-                <p class="google-font my-0">Speakers</p>
+                <p class="google-font my-0">Cards</p>
                 <v-progress-circular
                   indeterminate
                   v-if="speakersLoader"
@@ -98,9 +98,9 @@
                 >{{speakersData.length?speakersData.length:0}}</p>
                 <p
                   class="google-font my-0"
-                  v-on:click="goToRoute('/speakers')"
+                  v-on:click="goToRoute('/cards')"
                   style="font-size:80%;cursor: pointer;user-select: none;"
-                >View All Speakers</p>
+                >View All Cards</p>
               </v-col>
             </v-row>
           </v-container>

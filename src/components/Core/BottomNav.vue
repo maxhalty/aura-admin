@@ -21,8 +21,8 @@
             <v-icon>mdi-nature-people</v-icon>
         </v-btn>
 
-        <v-btn to="/speakers">
-            <span>Speakers</span>
+        <v-btn to="/cards">
+            <span>Cards</span>
             <v-icon>mdi-account-multiple</v-icon>
         </v-btn>
     </v-bottom-navigation>

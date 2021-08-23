@@ -57,8 +57,8 @@ export default new Vuex.Store({
         }
       },
       {
-        text: 'Speakers',
-        to: '/speakers',
+        text: 'Cards',
+        to: '/cards',
         icon: 'mdi-account-multiple',
         access: {
           "Super Admin": true,

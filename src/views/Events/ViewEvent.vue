@@ -74,7 +74,7 @@
                 <b>Important Links</b>
               </p>
               <div>
-                <v-btn
+                <!-- <v-btn
                   color="pink"
                   dark
                   target="_blank"
@@ -83,7 +83,7 @@
                   class="ma-1"
                   label
                   small
-                >Call For Speakers</v-btn>
+                >Call For Speakers</v-btn> -->
 
                 <v-btn
                   color="indigo"

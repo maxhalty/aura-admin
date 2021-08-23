@@ -16,7 +16,7 @@
             style="border-radius:5px;text-transform: capitalize;text-decoration:none;"
           >
             <v-icon left style="font-size:150%">mdi-arrow-left-thick</v-icon>
-            <span style="font-size:120%">Speakers</span>
+            <span style="font-size:120%">Card</span>
           </v-btn>
           <v-spacer></v-spacer>
           <ActivityLog :dialogData="speakerInfo"
@@ -34,7 +34,7 @@
           />
           <ShareSpeaker
             v-if="(!showLoader && !userNotFound)"
-            :url="'/speakers/'+speakerInfo.id"
+            :url="'/cards/'+speakerInfo.id"
             :name="speakerInfo.name"
           />
         </v-toolbar>
@@ -164,7 +164,7 @@
                 style="border-radius:5px;text-transform: capitalize;text-decoration:none;"
               >
                 <v-icon left style="font-size:150%">mdi-arrow-left-thick</v-icon>
-                <span style="font-size:120%">Back to Speakers</span>
+                <span style="font-size:120%">Back to Cards</span>
               </v-btn>
 
             </v-col>
@@ -228,7 +228,7 @@ export default {
       this.getSpeakerData();
     },
     goToTeam() {
-      this.$router.replace("/speakers");
+      this.$router.replace("/cards");
     },
     getSpeakerData() {
       this.showLoader = true;

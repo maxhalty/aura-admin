@@ -43,7 +43,7 @@ export default {
           this.loading = false;
           this.dialog = false;
           this.$router.push({
-            path: "/speakers",
+            path: "/cards",
             query: { msg: res.msg }
           });
         }

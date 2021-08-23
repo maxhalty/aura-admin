@@ -10,7 +10,7 @@
     <v-row class="my-0 py-0">
       <v-col>
         <v-toolbar class="elevation-0" style="border:1px solid #e0e0e0;border-radius:5px;">
-          <v-toolbar-title class="google-font mr-3">Speakers: {{ speakersData.length }}</v-toolbar-title>
+          <v-toolbar-title class="google-font mr-3">Cards: {{ speakersData.length }}</v-toolbar-title>
           <v-spacer></v-spacer>
           <!-- Desktop -->
           <v-text-field
@@ -108,7 +108,7 @@
                 :items="speakersData"
                 :loading="isLoading"
                 v-if="dataView == 0"
-                loading-text="Loading Speakers from Dir"
+                loading-text="Loading Cards from Dir"
                 :search="search"
                 disable-pagination
                 hide-default-footer
@@ -218,8 +218,8 @@
                           style="width:50%;text-align:center"
                           :src="require('@/assets/img/svg/DataNotFound.svg')"
                         />
-                        <h1 class="google-font">Speakers Data Not Found</h1>
-                        <p class="google-font">Kindly add Speaker</p>
+                        <h1 class="google-font">Cards Data Not Found</h1>
+                        <p class="google-font">Kindly add Cards</p>
                         <br />
                         <AddSpeaker v-if="(role=='Super Admin' || role=='Admin')" class="ml-2" @showSuccess="showSnakeBar" @message="showMessageSnakeBar" />
                       </v-col>
@@ -294,7 +294,7 @@ export default {
       this.showData();
     },
     gotoSpeakerDetails(id) {
-      this.$router.push("/speakers/" + id);
+      this.$router.push("/cards/" + id);
     },
     showData() {
       this.speakersData = [];
